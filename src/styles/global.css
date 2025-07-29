@@ -501,3 +501,954 @@ body {
         margin: 20px;
     }
 }
+
+/* Dashboard specific styles */
+.welcome-section {
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.welcome-section h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Appointment styles */
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.appointment-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.appointment-time,
+.appointment-date {
+    font-weight: 600;
+    color: #2c3e50;
+    min-width: 80px;
+    font-size: 14px;
+}
+
+.appointment-details {
+    flex: 1;
+}
+
+.patient-name,
+.doctor-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.appointment-reason {
+    color: #7f8c8d;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+/* Profile styles */
+.doctor-profile,
+.patient-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.profile-item:last-child {
+    border-bottom: none;
+}
+
+/* Quick actions */
+.quick-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.quick-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.quick-action-btn:hover {
+    background: #e9ecef;
+    border-color: #3498db;
+    transform: translateY(-2px);
+}
+
+.action-icon {
+    font-size: 24px;
+}
+
+/* Medical History styles */
+.medical-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.medical-record-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid #27ae60;
+}
+
+.record-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.record-date {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.record-doctor {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.record-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.record-field {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.record-field strong {
+    color: #2c3e50;
+    margin-right: 8px;
+}
+
+/* Form enhancements */
+.form-help {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.form-actions {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-select {
+    width: 150px;
+}
+
+/* Status select */
+.status-select {
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.status-select.status-scheduled {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.status-select.status-completed {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.status-select.status-cancelled {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* Role badges */
+.role-admin {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.role-doctor {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.role-patient {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+/* No data state */
+.no-data {
+    text-align: center;
+    padding: 40px 20px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.book-link {
+    display: block;
+    margin-top: 8px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+}
+
+/* Badge */
+.badge {
+    background: #3498db;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Text utilities */
+.text-muted {
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+/* Booking page styles */
+.booking-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.doctor-info-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #3498db;
+}
+
+.doctor-info-card h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.doctor-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-item {
+    font-size: 14px;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.doctor-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.doctor-card:hover {
+    border-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
+}
+
+.doctor-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 auto 15px;
+}
+
+.doctor-info h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.specialization {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.experience,
+.fee {
+    color: #7f8c8d;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.fee {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* Enhanced statistics cards */
+.stat-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(20px, -20px);
+}
+
+.stat-content {
+    position: relative;
+    z-index: 1;
+}
+
+.stat-card.users::before {
+    background: rgba(52, 152, 219, 0.1);
+}
+
+.stat-card.patients::before {
+    background: rgba(39, 174, 96, 0.1);
+}
+
+.stat-card.doctors::before {
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.stat-card.appointments::before {
+    background: rgba(243, 156, 18, 0.1);
+}
+
+/* Enhanced modal */
+.modal {
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .dashboard-row {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .filter-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .appointment-time,
+    .appointment-date {
+        min-width: auto;
+    }
+}
+
+/* Additional CSS styles for the remaining components */
+/* Add these styles to your src/styles/global.css file */
+
+/* Filters Section */
+.filters-section {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.filter-control {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Appointment DateTime Cell */
+.appointment-datetime {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.apt-date {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.apt-time {
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+/* Patient Info Cell */
+.patient-info,
+.patient-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Reason and other cells */
+.reason-cell,
+.diagnosis-cell,
+.treatment-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.completed-badge {
+    color: #27ae60;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Appointment Info Header in Modal */
+.appointment-info-header {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.appointment-info-header p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+/* Medical Timeline Styles */
+.medical-timeline {
+    padding: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-marker {
+    position: relative;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marker-dot {
+    width: 12px;
+    height: 12px;
+    background: #3498db;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #3498db;
+    z-index: 1;
+}
+
+.marker-line {
+    width: 2px;
+    height: 50px;
+    background: #e0e0e0;
+    margin-top: 4px;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.record-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.record-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.record-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.record-date {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.record-doctor {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.record-body {
+    padding: 20px;
+}
+
+.record-main-info {
+    margin-bottom: 16px;
+}
+
+.diagnosis-section,
+.symptoms-section {
+    margin-bottom: 16px;
+}
+
+.diagnosis-section h4,
+.symptoms-section h4 {
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.diagnosis-section p,
+.symptoms-section p {
+    color: #34495e;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.record-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.record-footer {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.prescription-preview {
+    font-size: 14px;
+    color: #34495e;
+}
+
+.prescription-preview strong {
+    color: #27ae60;
+}
+
+/* Health Summary Styles */
+.health-summary {
+    padding-bottom: 16px;
+}
+
+.common-conditions {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.common-conditions h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.conditions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.condition-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #3498db;
+}
+
+.condition-name {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.condition-count {
+    font-size: 12px;
+    color: #7f8c8d;
+    background: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* Patient Profile Summary */
+.patient-profile-summary {
+    padding: 16px 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #3498db;
+}
+
+.profile-item strong {
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.profile-item span {
+    color: #34495e;
+    font-size: 14px;
+}
+
+.allergies-section,
+.medical-background-section {
+    margin-top: 16px;
+    padding: 16px;
+    background: #fff8e1;
+    border-radius: 8px;
+    border-left: 4px solid #f39c12;
+}
+
+.allergies-section strong,
+.medical-background-section strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.allergies-content,
+.medical-background-content {
+    color: #34495e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Modal Record Details */
+.record-details-modal {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.record-header-info {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.info-item {
+    font-size: 14px;
+}
+
+.info-item strong {
+    color: #2c3e50;
+    margin-right: 8px;
+}
+
+.record-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.record-section {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 16px;
+}
+
+.record-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.record-section h4 {
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.section-content {
+    color: #34495e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.prescription-section {
+    background: #f0f8e8;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #27ae60;
+}
+
+.prescription-content {
+    color: #2c3e50;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Courier New', monospace;
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #d4edda;
+}
+
+.record-footer-info {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.record-disclaimer {
+    font-size: 12px;
+    color: #7f8c8d;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Responsive Design for New Components */
+@media (max-width: 768px) {
+    .filters-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        min-width: auto;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-marker {
+        flex-direction: row;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .marker-line {
+        width: 50px;
+        height: 2px;
+        margin-top: 0;
+        margin-left: 4px;
+    }
+
+    .record-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .condition-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .record-card {
+        margin: 0 -10px;
+    }
+
+    .record-body {
+        padding: 16px;
+    }
+
+    .record-header {
+        padding: 12px 16px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .btn-sm {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

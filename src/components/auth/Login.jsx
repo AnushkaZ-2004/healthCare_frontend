@@ -51,72 +51,56 @@ const Login = () => {
     };
 
     return (
-        <div className="login-container">
-            <div className="login-background">
-                <div className="login-card">
-                    <div className="login-header">
-                        <div className="logo">
-                            <div className="logo-icon">🏥</div>
-                            <h1>HealthCare Management</h1>
-                        </div>
-                        <p>Sign in to your account</p>
+
+        <div className="login-background">
+            <div className="login-card">
+                <div className="login-header">
+                    <div className="logo">
+                        <div className="logo-icon">🏥</div>
+                        <h1>HealthCare Management</h1>
                     </div>
-
-                    <form onSubmit={handleSubmit} className="login-form">
-                        {error && <div className="error-message">{error}</div>}
-
-                        <div className="form-group">
-                            <label htmlFor="username">Username</label>
-                            <input
-                                type="text"
-                                id="username"
-                                name="username"
-                                value={credentials.username}
-                                onChange={handleChange}
-                                required
-                                placeholder="Enter your username"
-                                disabled={loading}
-                            />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                value={credentials.password}
-                                onChange={handleChange}
-                                required
-                                placeholder="Enter your password"
-                                disabled={loading}
-                            />
-                        </div>
-
-                        <button
-                            type="submit"
-                            className="login-button"
-                            disabled={loading}
-                        >
-                            {loading ? 'Signing in...' : 'Sign In'}
-                        </button>
-                    </form>
-
-                    <div className="login-footer">
-                        <div className="demo-accounts">
-                            <h3>Demo Accounts:</h3>
-                            <div className="demo-account">
-                                <strong>Admin:</strong> admin / admin123
-                            </div>
-                            <div className="demo-account">
-                                <strong>Doctor:</strong> dr.smith / admin123
-                            </div>
-                            <div className="demo-account">
-                                <strong>Patient:</strong> patient1 / admin123
-                            </div>
-                        </div>
-                    </div>
+                    <p>Sign in to your account</p>
                 </div>
+
+                <form onSubmit={handleSubmit} className="login-form">
+                    {error && <div className="error-message">{error}</div>}
+
+                    <div className="form-group">
+                        <label htmlFor="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            value={credentials.username}
+                            onChange={handleChange}
+                            required
+                            placeholder="Enter your username"
+                            disabled={loading}
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            value={credentials.password}
+                            onChange={handleChange}
+                            required
+                            placeholder="Enter your password"
+                            disabled={loading}
+                        />
+                    </div>
+
+                    <button
+                        type="submit"
+                        className="login-button"
+                        disabled={loading}
+                    >
+                        {loading ? 'Signing in...' : 'Sign In'}
+                    </button>
+                </form>
             </div>
         </div>
     );
